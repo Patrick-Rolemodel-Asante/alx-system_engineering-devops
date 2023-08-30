@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -1pa | sort -f | awk '{printf "%s, ", $0}' | sed 's/, $/\n/'
+ls -a -1p | sort -f | awk '{printf "%s, ", $0}' | sed 's/, $/\n/'
