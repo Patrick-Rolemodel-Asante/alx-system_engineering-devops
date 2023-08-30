@@ -1,0 +1,3 @@
+#!/bin/bash
+ls -p -A | grep -E -v '^\.{1,2}$' | sed ':a;N;$!ba;s/\n/, /g; s/^/, /; s/,\s$/\n/'
+
