@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -paXmS
+ls -1p | sort -f | awk '{printf "%s, ", $0}' | sed 's/, $/\n/'
